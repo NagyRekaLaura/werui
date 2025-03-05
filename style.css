@@ -1,0 +1,340 @@
+    nav {
+        height: 70px;
+        background-color: beige;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .button1 {
+        background: #fff;
+        border: none;
+        padding: 10px 20px;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        width: 120px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transform: skew(-21deg);
+      }
+      
+      span {
+        display: inline-block;
+        transform: skew(21deg);
+      }
+      
+      .button1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        left: 0;
+        background: rgb(20, 20, 20);
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.5s;
+      }
+      
+      .button1:hover {
+        color: #fff;
+      }
+      
+      .button1:hover::before {
+        left: 0;
+        right: 0;
+        opacity: 1;
+      }
+
+      h2{
+        padding: 20px;
+      }
+
+    img {
+        float: left;
+        height: 60px;
+
+    }
+
+    a,
+    a::after,
+    a:hover,
+    a::before {
+        text-decoration: none;
+        color: black;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        align-self: center;
+
+    }
+
+    .home {
+        align-self: center;
+        display: block;
+        padding: 50px;
+    }
+
+    .kurva {
+        width: 400px;
+        height: auto;
+        float: left;
+
+    }
+
+    .please {
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        float: left;
+        overflow: hidden;
+        border-radius: 20px;
+        margin: 20px;
+        
+
+    }
+
+    .full {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+
+        border: 1px solid black;
+    }
+
+    .background-image {
+        width: 400px;
+        height: auto;
+        border-radius: 20px;
+        display: inline-block;
+
+    }
+
+    #par {
+        flex: 1;
+    }
+
+    #par p {
+        margin: 0;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .card {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
+        height: 50px;
+        perspective: 100px;
+        cursor: pointer;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+
+    }
+
+    .card:hover .inner {
+        transform: rotateY(180deg);
+    }
+
+    .front,
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+
+    }
+
+    .front {
+        background: #b7b4ca;
+        border: 1px solid #000000;
+    }
+
+    .back {
+        background: #adaabe;
+        color: white;
+        transform: rotateY(180deg);
+        border: 1px solid #000000;
+    }
+
+    /* 
+
+
+
+
+
+*/
+
+    .image-container1 {
+        position: relative;
+        display: inline-block;
+    }
+
+    .background-image1 {
+        width: 400px;
+        height: auto;
+        border-radius: 20px;
+        display: block;
+    }
+
+    .card1 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
+        height: 50px;
+        perspective: 1000px;
+        cursor: pointer;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .inner1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .image-container1:hover .inner1 {
+        transform: rotateY(180deg);
+    }
+
+    .front1,
+    .back1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+    }
+
+    .front1 {
+        background: #7057ff;
+        border: 1px solid #000000;
+    }
+
+    .back1 {
+        background: #5237e6;
+        color: white;
+        transform: rotateY(180deg);
+        border: 1px solid #000000;
+    }
+    /*
+
+
+
+
+
+*/
+.pleaseor {
+    perspective: 1000px;
+    display: inline-block;
+}
+
+.pleaseor a {
+    display: block;
+    width: fit-content;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.pleaseor:hover a {
+    transform: rotateY(180deg);
+}
+
+.pleaseor img {
+    width: 100%;
+    display: block;
+    backface-visibility: hidden;
+}
+
+.pleaseor figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    backface-visibility: hidden;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.pleaseor:hover figcaption {
+    opacity: 1;
+}
+/*
+
+
+
+
+
+*/
+.svg-button {
+    background-color: beige ;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .svg-button:hover {
+    background-color: beige;
+  }
+  
+  .svg-path {
+    transition: stroke-width 0.3s;
+  }
+  
+  .svg-button:hover .svg-path {
+    stroke-width: 2;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 100;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .svg-path {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+  }
+  
+  .svg-button:hover .svg-path {
+    animation: draw 500ms ease-in forwards;
+  }
+  
