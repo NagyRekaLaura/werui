@@ -1,13 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(214, 117, 117);
+    background-color: rgb(236, 238, 255);
   }
   
   #quiz {
     max-width: 500px;
+    height: auto;
     margin: 0 auto;
     padding: 20px;
-    background-color: #66ebf0;
+    background-color: #c0dcdd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
   }
@@ -41,3 +42,5 @@ body {
   button:hover {
     background-color: #8f8d8d;
   }
+
+  
